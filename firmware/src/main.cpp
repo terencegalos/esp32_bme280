@@ -8,7 +8,7 @@
 
 const char* ssid = "DEFAULT";
 const char* password = "fiberpls123";
-const char* serverUrl = "https://0ed6f5c6c4354e75-103-40-2-54.serveousercontent.com/api/sensor";
+const char* serverUrl = "https://13ba19d0156730f7-103-40-2-54.serveousercontent.com/api/sensor";
 
 
 #define LED_PIN 2
