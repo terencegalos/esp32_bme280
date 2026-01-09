@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const serverUrl = process.env.REACT_APP_SERVER_IP;
+const serverUrl = process.env.REACT_APP_SERVER;
 
 function App() {
   const [data, setData] = useState(null);
@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () =>{
       try {
-        const response = await fetch(`http://${serverUrl}:3030/api/sensor`);
+        const response = await fetch(`${serverUrl}/api/sensor`);
         const json = await response.json();
         setData(json);
       } catch (error) {
